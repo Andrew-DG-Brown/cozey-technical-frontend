@@ -9,7 +9,12 @@ const config: Config = {
   theme: {
     extend: {
       'cozey-blue': 'rgb(11, 35, 65)',
-      'cozey-light-blue': 'rgb(105, 162, 255)',
+      'cozey-black': 'rgb(25, 20, 43)',
+      'cozey-beige': 'rgb(236, 235, 231)',
+      'cozey-cyan': 'rgb(105, 162, 255)',
+      'cozey-violet': 'rgb(83, 84, 138)', //small text under product image card
+      'cozey-brown': 'rgb(179, 164, 155)', //for 'outdoor' badge
+      'cozey-tan': 'rgb(179, 92, 30)', //for 'Save {percent}' text
       'cozey-table-oak': 'rgb(221, 181, 134)',
       'cozey-table-black-wood': 'rgb(10, 4, 1)',
       'cozey-table-walnut': 'rgb(88, 47, 17)',
