@@ -174,4 +174,19 @@ export const tables = [
         "sectionId": "4",
         "sectionName": "Table Sets"
     }
-] as const
+]
+
+export type TableSection = typeof tables[0]
+
+export type Tables = TableSection['tables']
+
+export type TableCard = {
+    "tableId": string,
+    "imageName": string,
+    "color": typeof COLORS.oak,
+    "title": string,
+    "price": number,
+    "financing": boolean,
+    "saving": null | string,
+    "outdoor": boolean
+}

@@ -1,9 +1,10 @@
 import { cozeyRegular, haffer } from '@/assets/fonts'
+import { MAIN_CONTAINER_WIDTH } from '@/config/constants'
 
 
 export default function Header() {
     return (
-        <div className='fixed w-full top-[90px] pb-[16px] z-20'>
+        <div className={`fixed w-full px-[40px] top-[90px] pb-[16px] z-20`}>
             <div className='w-[89%] mx-auto'>
                 <div className="flex flex-col gap-[4px]">
                     <h1 className={`${cozeyRegular.className} text-[60px] text-cozey-blue h-[75px]`}>Tables</h1>
