@@ -322,7 +322,135 @@ export const tables = [
     },
     {
         "sectionId": "3",
-        "sectionName": "Media Units"
+        "sectionName": "Media Units",
+        tables: [
+            {
+                "tableId": "30",
+                "color": COLORS.walnut,
+                "title": "Stella Media Unit - Set of 3",
+                "price": 475,
+                "financing": true,
+                "saving": null,
+                "outdoor": false
+            },
+            {
+                "tableId": "31",
+                "color": COLORS.oak,
+                "title": "Stella Media Unit - Set of 2",
+                "price": 330,
+                "financing": true,
+                "saving": null,
+                "outdoor": false
+            },
+            {
+                "tableId": "32",
+                "color": COLORS.oak,
+                "title": "Stella Media Unit",
+                "price": 165,
+                "financing": true,
+                "saving": null,
+                "outdoor": false
+            },
+            {
+                "tableId": "33",
+                "color": COLORS.oak,
+                "title": "Stella Media Unit - 1 Unit | No Door",
+                "price": 145,
+                "financing": true,
+                "saving": null,
+                "outdoor": false
+            },
+            {
+                "tableId": "34",
+                "color": COLORS.walnut,
+                "title": "Stella Media Unit - 2 Units",
+                "price": 310,
+                "financing": true,
+                "saving": null,
+                "outdoor": false
+            },
+            {
+                "tableId": "35",
+                "color": COLORS.oak,
+                "title": "Stella Media Unit - 2 Units | No Doors",
+                "price": 290,
+                "financing": true,
+                "saving": null,
+                "outdoor": false
+            },
+            {
+                "tableId": "36",
+                "color": COLORS.oak,
+                "title": "Stella Media Unit - Set of 3",
+                "price": 475,
+                "financing": true,
+                "saving": null,
+                "outdoor": false
+            },
+            {
+                "tableId": "37",
+                "color": COLORS.walnut,
+                "title": "Stella Media Unit - 3 Units | No Doors",
+                "price": 435,
+                "financing": true,
+                "saving": null,
+                "outdoor": false
+            },
+            {
+                "tableId": "38",
+                "color": COLORS.walnut,
+                "title": "Stella Media Unit - 4 Units",
+                "price": 620,
+                "financing": true,
+                "saving": null,
+                "outdoor": false
+            },
+            {
+                "tableId": "39",
+                "color": COLORS.oak,
+                "title": "Stella Media Unit - 4 Units | No Doors",
+                "price": 580,
+                "financing": true,
+                "saving": null,
+                "outdoor": false
+            },
+            {
+                "tableId": "40",
+                "color": COLORS.oak,
+                "title": "Stella Media Unit - 2 Units",
+                "price": 310,
+                "financing": true,
+                "saving": null,
+                "outdoor": false
+            },
+            {
+                "tableId": "41",
+                "color": COLORS.walnut,
+                "title": "Stella Media Unit - Set of 4",
+                "price": 620,
+                "financing": true,
+                "saving": null,
+                "outdoor": false
+            },
+            {
+                "tableId": "42",
+                "color": COLORS.walnut,
+                "title": "Stella Media Unit - 3 Units | With Doors",
+                "price": 495,
+                "financing": true,
+                "saving": null,
+                "outdoor": false
+            },
+            {
+                "tableId": "43",
+                "color": COLORS.oak,
+                "title": "Stella Media Unit - 4 Units | With Doors",
+                "price": 660,
+                "financing": true,
+                "saving": null,
+                "outdoor": false
+            }
+        ]
     },
     {
         "sectionId": "4",
