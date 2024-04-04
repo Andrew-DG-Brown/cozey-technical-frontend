@@ -323,7 +323,7 @@ export const tables = [
     {
         "sectionId": "3",
         "sectionName": "Media Units",
-        tables: [
+        "tables": [
             {
                 "tableId": "30",
                 "color": COLORS.walnut,
@@ -454,7 +454,72 @@ export const tables = [
     },
     {
         "sectionId": "4",
-        "sectionName": "Table Sets"
+        "sectionName": "Table Sets",
+        "tables": [
+            {
+                "tableId": "44",
+                "color": COLORS.blackWood,
+                "title": "Pluto Table Set | 1 Coffee Table & 1 Side Table",
+                "price": 195,
+                "financing": false,
+                "saving": "10%",
+                "outdoor": false
+            },
+            {
+                "tableId": "45",
+                "color": COLORS.espresso,
+                "title": "Pluto Table Set | 1 Coffee Table & 2 Side Tables",
+                "price": 225,
+                "financing": false,
+                "saving": "15%",
+                "outdoor": false
+            },
+            {
+                "tableId": "46",
+                "color": COLORS.eclipse,
+                "title": "Pair of Solis Adjustable Tables",
+                "price": 320,
+                "financing": false,
+                "saving": "10%",
+                "outdoor": false
+            },
+            {
+                "tableId": "47",
+                "color": COLORS.walnut,
+                "title": "Stella Table Set | 2-Unit Media & 2-Unit Coffee Table",
+                "price": 620,
+                "financing": false,
+                "saving": "15%",
+                "outdoor": false
+            },
+            {
+                "tableId": "48",
+                "color": COLORS.walnut,
+                "title": "Stella Table Set | 2-Unit Media & 1 Side Table",
+                "price": 465,
+                "financing": false,
+                "saving": "10%",
+                "outdoor": false
+            },
+            {
+                "tableId": "49",
+                "color": COLORS.oak,
+                "title": "Stella Table Set | 3-Unit Media & 2-Unit Coffee Table",
+                "price": 715,
+                "financing": false,
+                "saving": "20%",
+                "outdoor": false
+            },
+            {
+                "tableId": "50",
+                "color": COLORS.oak,
+                "title": "Stella Table Set | 3-Unit Media & 1 Side Table",
+                "price": 580,
+                "financing": false,
+                "saving": "15%",
+                "outdoor": false
+            }
+        ]
     }
 ]
 

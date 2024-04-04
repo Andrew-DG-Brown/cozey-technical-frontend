@@ -35,12 +35,27 @@ export function TableCard({ card }: { card: any }) {
                 <div className='h-[18px] flex items-center gap-[8px]'>
                     <span className={`${haffer.className} font-normal text-[14px] leading-[17.56px] text-cozey-violet whitespace-nowrap`}>${card.price}{' '}{card.financing ? 'or financing' : ''}</span>
                     <span className={`${haffer.className} font-normal text-[14px] leading-[17.56px] text-cozey-violet`}>|</span>
-                    <span className={`flex items-center relative ${haffer.className} font-bold text-[14px] leading-[18px] cursor-pointer text-cozey-cyan`}>
-                        Customize <span className='pl-[4px]'>{'->'}</span>
-                    </span>
+                    {card.saving ? (
+                        <span className={`flex items-center relative ${haffer.className} font-bold text-[14px] leading-[18px] cursor-pointer text-cozey-tan whitespace-nowrap`}>
+                        Save{' '}{card.saving}
+                        </span>
+                    ): (
+                        <Customize />
+                    )}
                 </div>
+                {card.saving ? (
+                    <Customize />
+                ) : null}
             </div>
 
         </div>
+    )
+}
+
+function Customize() {
+    return (
+        <span className={`flex items-center relative ${haffer.className} font-bold text-[14px] leading-[18px] cursor-pointer text-cozey-cyan`}>
+            Customize <span className='pl-[4px]'>{'->'}</span>
+        </span>
     )
 }
