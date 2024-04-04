@@ -43,12 +43,11 @@ const config: Config = {
         '1fr': '1fr 1fr 1fr'
       },
       transitionProperty: {
-        'cozey-smooth': 'all 0.5s ease-in 0s'
+        'cozey-smooth': 'all 0.2s ease-in-out 0s'
       },
       maxWidth: {
         'main-container-lg': '1280px'
-      },
-      borderWidth: {}
+      }
     },
   },
   plugins: [],

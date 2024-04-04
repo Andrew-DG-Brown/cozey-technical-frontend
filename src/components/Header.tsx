@@ -1,6 +1,28 @@
 import { cozeyRegular, haffer } from '@/assets/fonts'
+import { useIntersection } from '@/contexts/Intersection.context'
+import { cozeyColors } from '../../tailwind.config'
+
+const navConfig = [
+    {
+        "id": 1,
+        "label": "Coffee Tables"
+    },
+    {
+        "id": 2,
+        "label": "Side Tables"
+    },
+    {
+        "id": 3,
+        "label": "Media Units"
+    },
+    {
+        "id": 4,
+        "label": "Table Bundles"
+    }
+]
 
 export default function Header() {
+    const { currentSectionId } = useIntersection()
     return (
         <div className={`fixed top-0 pt-[90px] w-full pb-[16px] z-20 bg-cozey-white`}>
             <div className={`max-w-main-container-lg mx-auto`}>
@@ -8,11 +30,21 @@ export default function Header() {
                     <h1 className={`${cozeyRegular.className} text-[60px] text-cozey-blue h-[75px]`}>Tables</h1>
                     <span className={`${haffer.className} font-normal text-cozey-black text-[20px] mb-[20px]`}>A perfect pairing to your sofa.</span>
                     <div className="flex h-[48px] bg-cozey-beige gap-[10px] w-fit rounded-[24px] overflow-hidden p-[8px]">
-                        <a className={`bg-cozey-blue text-white h-full ${haffer.className} text-[15px] py-[6px] px-[16px] flex items-center justify-center rounded-[16px] overflow-hidden cursor-pointer whitespace-nowrap`}>Coffee Tables</a>
+                        {navConfig.map(navItem => {
+                            const isActive = navItem.id == currentSectionId
+                            return (
+                                <a key={navItem.id} style={{ 
+                                    backgroundColor: isActive ? cozeyColors['cozey-blue'] : 'transparent',
+                                    color: isActive ? 'white' : cozeyColors['cozey-blue'],
+                                    transition: 'all 0.2s ease-in-out 0s'
+                                }} className={`bg-cozey-blue text-white h-full ${haffer.className} text-[15px] py-[6px] px-[16px] flex items-center justify-center rounded-[16px] overflow-hidden cursor-pointer whitespace-nowrap`}>{navItem.label}</a>
+                            )
+                        })}
+                        {/* <a className={`bg-cozey-blue text-white h-full ${haffer.className} text-[15px] py-[6px] px-[16px] flex items-center justify-center rounded-[16px] overflow-hidden cursor-pointer whitespace-nowrap`}>Coffee Tables</a>
                         <a className={`bg-transparent text-cozey-blue h-full ${haffer.className} text-[15px] py-[6px] px-[16px] flex items-center justify-center rounded-[16px] overflow-hidden cursor-pointer whitespace-nowrap`}>Side Tables</a>
                         <a className={`bg-transparent text-cozey-blue h-full ${haffer.className} text-[15px] py-[6px] px-[16px] flex items-center justify-center rounded-[16px] overflow-hidden cursor-pointer whitespace-nowrap`}>Media Units</a>
-                        <a className={`bg-transparent text-cozey-blue h-full ${haffer.className} text-[15px] py-[6px] px-[16px] flex items-center justify-center rounded-[16px] overflow-hidden cursor-pointer whitespace-nowrap`}>Table Bundles</a>
-                        </div>
+                        <a className={`bg-transparent text-cozey-blue h-full ${haffer.className} text-[15px] py-[6px] px-[16px] flex items-center justify-center rounded-[16px] overflow-hidden cursor-pointer whitespace-nowrap`}>Table Bundles</a> */}
+                    </div>
                 </div>  
             </div>
         </div>
