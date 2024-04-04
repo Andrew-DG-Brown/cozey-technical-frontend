@@ -2,6 +2,7 @@ import type { Config } from "tailwindcss";
 
 export const cozeyColors = {
   'cozey-blue': 'rgb(11, 35, 65)',
+  'cozey-light-blue': 'rgb(43, 44, 110)',
   'cozey-black': 'rgb(25, 20, 43)',
   'cozey-white': 'rgb(247, 248, 246)',
   'cozey-gray': 'rgb(79, 96, 118)',
@@ -22,7 +23,7 @@ export const cozeyColors = {
   'cozey-table-solstice': 'rgb(248, 248, 248)',
 } as const
 
-type CozeyColorName = keyof typeof cozeyColors
+export type CozeyColorName = keyof typeof cozeyColors
 
 const config: Config = {
   content: [

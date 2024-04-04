@@ -14,11 +14,20 @@ export function TableCard({ card }: { card: any }) {
                     <Image 
                     alt={buildAlt(card.title)}
                     fill={true}
-                    src={`/images/${card.imageName}`}/>
+                    sizes="(max-width: 400px) 100vw, (max-width: 400px) 50vw, 33vw"
+                    src={`/images/${card.tableId}.webp`}/>
+                    {/* Floating chips */}
                     <div className='absolute bottom-[12px] z-10 right-[12px] flex justify-end items-center py-[6px] pr-[6px] pl-[10px] gap-[8px] bg-white rounded-[100px] cursor-pointer border-[0.5px] border-solid border-cozey-beige-dark'>
                         <div className={`flex ${haffer.className} font-semibold text-[12px] leading-[18px] justify-end items-center text-right text-cozey-gray`}>{card.color.label}</div>
-                        <div style={{ backgroundColor: cozeyColors[card.color.name as CozeyColorName] }} className={`bg-${card.color.name} rounded-full w-[20px] h-[20px]`}></div>
+                        <div style={{ backgroundColor: cozeyColors[card.color.name as CozeyColorName] }} className={`rounded-full w-[20px] h-[20px]`}></div>
                     </div>
+                    {card.outdoor ? (
+                        <div className='absolute inline-flex px-[12px] py-[8px] bg-cozey-brown rounded-[16px] max-w-fit top-[12px] z-10 left-[12px]'>
+                            <div className={`text-white ${haffer.className} font-normal text-[10px] leading-[12px] flex items-center justify-center whitespace-nowrap`}>
+                                OUTDOOR
+                            </div>
+                        </div>
+                    ) : null}
                 </div>
             </div>
             <div className='relative flex flex-col items-start gap-[4px] w-full'>
