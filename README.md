@@ -1,6 +1,8 @@
 ## Cozey Code Challenge - Question 2
 
-My submission for the Cozey Coding Chanllenge - question 2 (frontend)
+My submission for the Cozey Coding Challenge - question 2 (frontend)
+
+[Demo/walkthrough link](https://www.loom.com/share/b123b3b1cfb9453d9b354b5961fd90eb?sid=588afb13-4918-44dc-97b6-a2db3c1b4730)
 
 ## Running Locally
 
