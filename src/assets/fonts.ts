@@ -1,4 +1,5 @@
 import localFont from 'next/font/local'
+
 export const cozeyRegular = localFont({
     src: '../../public/fonts/Cozey-Regular-Web.woff'
 })

@@ -8,12 +8,14 @@ function buildAlt(title: string) {
 
 export function TableCard({ card }: { card: any }) {
     return (
-        <div className='relative flex flex-col items-start justify-evenly gap-[12px] w-[400px] h-full'>
+        <div className='relative flex flex-col items-start justify-evenly gap-[12px] w-[320px] xs:w-[400px] 1md:w-[340px] 1lg:w-[400px] h-[85%] xs:h-full 1md:h-[90%] 1lg:h-full'>
             <div className='w-full h-[300px]'>
                 <div className='relative overflow-hidden w-full h-full bg-transparent cursor-pointer rounded-[20px] border-[2px] border-solid border-cozey-beige'>
                     <Image 
                     alt={buildAlt(card.title)}
                     fill={true}
+                    loading='eager'
+                    priority={true}
                     sizes="(max-width: 400px) 100vw, (max-width: 400px) 50vw, 33vw"
                     src={`/images/${card.tableId}.webp`}/>
                     {/* Floating chips */}

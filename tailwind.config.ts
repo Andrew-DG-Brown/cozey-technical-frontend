@@ -33,6 +33,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        '1xl': '1350px',
+        '1lg': '1050px',
+        '1md': '850px',
+        'xs': '520px'
+      },
       colors: cozeyColors,
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

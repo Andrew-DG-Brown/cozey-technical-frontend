@@ -17,13 +17,17 @@ export default function TableSection({ section }: { section: TableSection }) {
     return (
         <InView as='div' 
         onChange={(inView, entry) => handleSectionChange(inView)}
-        rootMargin='-30% 0px -70% 0px'
+        rootMargin='-40% 0px -50% 0px'
         id={section.sectionId} 
-        className={`relative mx-auto max-w-main-container-lg`}>
-            <h2 ref={sectionRefs.current[Number(section.sectionId) - 1]} className={`text-cozey-light-blue w-full text-[48px] ${cozeyRegular.className} pb-2 pl-4 scroll-mt-[350px]`}>{section.sectionName}</h2>
-            <div className='grid grid-cols-[1fr_1fr_1fr] relative justify-center gap-[40px] mx-auto'>
+        className={`relative mx-auto w-[80%] 1xl:max-w-main-container-lg`}>
+            <h2 ref={sectionRefs.current[Number(section.sectionId) - 1]} className={`text-cozey-light-blue w-full text-[30px] md:text-[48px] ${cozeyRegular.className} pb-2 scroll-mt-[350px] max-1xl:text-center`}>{section.sectionName}</h2>
+            <div className='grid 1md:grid-cols-[1fr_1fr] xl:grid-cols-[1fr_1fr_1fr] relative items-center xl:justify-center gap-[30px] 1md:gap-[20px] 1lg:gap-[40px] mx-auto'>
                 {section.tables?.map((tableCard, i) => {
-                    return <TableCard key={i} card={tableCard}/>
+                    return (
+                        <div className='w-full h-full flex max-1xl:justify-center' key={i}>
+                            <TableCard card={tableCard}/>
+                        </div>
+                    )
                 })}
             </div>
         </InView>
